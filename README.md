@@ -1,1 +1,1 @@
-# ecommerce_fastapi
+# An Ecommerce API built with FastAPI
