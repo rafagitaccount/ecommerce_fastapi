@@ -1,14 +1,6 @@
 from fastapi import FastAPI
+from user import router as user_router
 
-app = FastAPI(title='Sample Docs', description='This is private docs',
-              version='1.0') # docs_url=None
+app = FastAPI(title="EcommerceApp", version="0.0.1")
 
-
-@app.get("/")
-async def root():
-    return {"message": "Hello PyCharm"}
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+app.include_router(user_router.router)
