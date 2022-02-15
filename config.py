@@ -8,3 +8,6 @@ DATABASE_NAME = os.getenv('DATABASE_NAME', 'ecommerce')
 TEST_DATABASE_NAME = os.getenv('TEST_DATABASE_NAME', 'development')
 
 # to install psycopg2 on linux, first install these dependencies: libpq-dev python-dev python3-dev build-essential
+
+# Git hash authentication
+# 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

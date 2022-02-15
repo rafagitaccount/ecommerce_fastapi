@@ -100,5 +100,4 @@ GitHub.sublime-settings
 .history
 
 # Git Auth File
-git.hash
 config.py
