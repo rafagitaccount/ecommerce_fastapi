@@ -9,6 +9,7 @@ import config as config_env
 from db import Base
 
 from user.models import User
+from products.models import Product, Category
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
