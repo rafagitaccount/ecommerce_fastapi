@@ -10,6 +10,8 @@ from db import Base
 
 from user.models import User
 from products.models import Product, Category
+from cart.models import Cart, CartItems
+from orders.models import Order, OrderDetails
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

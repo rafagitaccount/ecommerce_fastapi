@@ -1,6 +1,6 @@
 from code import interact
 from tkinter import CASCADE
-from sqlalchemy import Column, ForeignKey, Integer, String, Float, Text, column
+from sqlalchemy import Column, ForeignKey, Integer, String, Float, Text
 from sqlalchemy.orm import relationship
 
 from db import Base
@@ -26,3 +26,6 @@ class Product(Base):
     category_id = Column(Integer, ForeignKey(
         "category.id", ondelete="CASCADE"))
     category = relationship("Category", back_populates="product")
+    cart_items = relationship("CartItems", back_populates="products")
+    order_details = relationship(
+        "OrderDetails", back_populates="product_order_details")
